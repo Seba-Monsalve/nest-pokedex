@@ -11,6 +11,8 @@ async function bootstrap() {
     new ValidationPipe({
       whitelist: true,
       forbidNonWhitelisted: true,
+      transform: true,
+      transformOptions: {enableImplicitConversion: true}, // Enable implicit conversion for numbers and booleans
     }),
   );
   await app.listen(process.env.PORT ?? 3000);

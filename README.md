@@ -15,6 +15,8 @@ npm i
 
 4. docker-compose up -d
 
+5. Reconstruir la data usando seed
+
 
 ## Stack Usado 
 
